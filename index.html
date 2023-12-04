@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym Freaks</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #004d40, #001064); /* Animated dark green and blue gradient background */
+      color: #fff;
+      overflow-x: hidden; /* Added to prevent horizontal scrollbar */
+      animation: gradientAnimation 10s linear infinite; /* Animation for gradient background */
+    }
+
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    header {
+      background: linear-gradient(to right, #320463, #63042a); /* Gradient background for the header */
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #444;
+      padding: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    section {
+      padding: 20px;
+      margin-top: 60px; /* Add margin to account for fixed header */
+    }
+
+    h2 {
+      color: #ffcc00;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-bottom: 8rem;
+    }
+
+    .workout_container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .card {
+      width: 300px;
+      margin: 20px;
+      padding: 15px;
+      background-color: #333;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    video {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #444;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Fitness Hub</h1>
+  </header>
+
+  <nav>
+    <a href="#workouts">Workouts</a>
+    <a href="#post-workout">Post Workout Foods</a>
+    <a href="#videos">Videos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="workouts">
+    <h2>Workouts</h2>
+    <div class="workout_container">
+      <div class="card">
+        <img src="workout1.jpg" alt="Workout 1">
+        <h3>Beginner Full Body Workout</h3>
+        <p>A full-body workout is perfect for beginners. It targets major muscle groups and helps build overall strength and endurance.</p>
+        <p>Example exercises:</p>
+        <ul>
+          <li>Squats</li>
+          <li>Push-ups</li>
+          <li>Rows</li>
+          <li>Planks</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <img src="workout2.jpg" alt="Workout 2">
+        <h3>Cardio Workout for Beginners</h3>
+        <p>Cardiovascular exercises are essential for fitness. This beginner-friendly cardio workout helps improve heart health and stamina.</p>
+        <p>Example exercises:</p>
+        <ul>
+          <li>Jumping jacks</li>
+          <li>Running in place</li>
+          <li>High knees</li>
+          <li>Jump rope</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <img src="workout3.jpg" alt="Workout 3">
+        <h3>Strength Training for Newbies</h3>
+        <p>Strength training is crucial for building muscle and boosting metabolism. Here's a simple routine for beginners.</p>
+        <p>Example exercises:</p>
+        <ul>
+          <li>Deadlifts</li>
+          <li>Bench press</li>
+          <li>Overhead press</li>
+          <li>Bicep curls</li>
+        </ul>
+      </div>
+      <!-- Add more workout cards as needed -->
+    </div>
+  </section>
+
+  <section id="post-workout">
+    <h2>Post Workout Foods</h2>
+    <div class="container">
+      <!-- Content from the provided link -->
+      <div class="card">
+        <img src="recipe1.jpg" alt="Recipe 1">
+        <h3>Chicken &amp; Rice Soup</h3>
+        <p>This chicken and rice soup is a hearty post-workout meal. It provides a good balance of protein and carbohydrates to help with muscle recovery.</p>
+        <p><a href="https://www.tasteofhome.com/recipes/chicken-rice-soup/" target="_blank" rel="noopener noreferrer">Get the Recipe</a></p>
+      </div>
+
+      <div class="card">
+        <img src="recipe2.jpg" alt="Recipe 2">
+        <h3>Quinoa Salad</h3>
+        <p>Quinoa is a great source of protein and pairs well with fresh vegetables in this nutritious salad. It's light yet satisfying for post-exercise replenishment.</p>
+        <p><a href="https://www.tasteofhome.com/recipes/quinoa-salad/" target="_blank" rel="noopener noreferrer">Get the Recipe</a></p>
+      </div>
+
+      <div class="card">
+        <img src="recipe3.jpg" alt="Recipe 3">
+        <h3>Protein-Packed Smoothie</h3>
+        <p>Blend up a protein-packed smoothie with your favorite fruits, yogurt, and protein powder. It's a delicious and convenient way to refuel after a workout.</p>
+        <p><a href="https://www.tasteofhome.com/recipes/protein-packed-smoothie/" target="_blank" rel="noopener noreferrer">Get the Recipe</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ... (other sections) ... -->
+
+  <footer>
+    <p>&copy; 2023 Gym Freaks</p>
+  </footer>
+
+</body>
+</html>
