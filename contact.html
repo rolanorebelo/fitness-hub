@@ -1,111 +1,38 @@
-<!-- contact.html -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fitness Hub - Contact</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Link to the common stylesheet -->
-
-  <style>
-    /* Add any specific styles for the contact page if needed */
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Arial', sans-serif;
-      background: linear-gradient(to right, #004d40, #001064);
-      color: #fff;
-      overflow-x: hidden;
-      animation: gradientAnimation 10s linear infinite;
-    }
-
-    @keyframes gradientAnimation {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-
-    header {
-      background: linear-gradient(to right, #320463, #63042a);
-      padding: 20px;
-      text-align: center;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-around;
-      background-color: #444;
-      padding: 10px;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
-      transition: color 0.3s ease-in-out;
-    }
-
-    nav a:hover {
-      color: #ffcc00;
-    }
-
-    section {
-      padding: 20px;
-      margin-top: 60px;
-      text-align: center;
-    }
-
-    h2 {
-      color: #ffcc00;
-    }
-
-    .contact-info {
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    footer {
-      background-color: #444;
-      padding: 10px;
-      text-align: center;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Freaks - Contact</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <header>
+        <h1>Fitness Hub</h1>
+    </header>
 
-  <header>
-    <h1>Fitness Hub - Contact</h1>
-  </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="workouts.html">Workouts</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-  <nav>
-    <a href="index.html#workouts">Workouts</a>
-    <a href="index.html#post-workout">Post Workout Foods</a>
-    <a href="videos.html">Videos</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <marquee class="marquee">No Pain! No Gain!</marquee>
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <div class="contact-info">
-      <p>If you have any questions, feedback, or inquiries, feel free to reach out to us!</p>
-      <p>Email: rolano@fitnesshub.com</p>
-      <p>Phone: +1 (123) 456-7890</p>
-      <p>Address: Denton, TX</p>
-    </div>
-  </section>
+    <section id="contact" class="gradient-section">
+        <h2>Contact Us</h2>
+        <p>Ready to take the next step? Reach out to us for personalized guidance.</p>
+        <form>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            <button type="submit">Submit</button>
+        </form>
+    </section>
 
-  <footer>
-    <p>&copy; 2023 Fitness Hub. Built by Rolano Rebelo.</p>
-  </footer>
-
+    <footer>
+        <p>&copy; 2023 Fitness Freaks</p>
+    </footer>
 </body>
+
 </html>
